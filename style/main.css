@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.swiper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3px;
+}
+
+
+.swiper .box {
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    border: 1px solid #000;
+}
+
+.active {
+    animation: boxAnim 1s ease infinite ;
+}
+
+@keyframes boxAnim {
+    0% {
+        background-color: #fff;
+    }
+    25% {
+        background-color: aqua;
+    }
+    50% {
+        background-color: fuchsia;
+    }
+    75% {
+        background-color: rebeccapurple;
+    }
+    100% {
+        background-color: blue;
+    }
+}
